@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Class Routine</title>
+   
+</head>
+<body>
+    <h1>Weekly Class Routine</h1>
+    <table border="1">
+    <tr>
+        <th colspan="4">Class Schedule - Fall 2026</th>
+    </tr>
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Course</th>
+            <th>Room</th>
+        </tr>
+        <tr>
+        <td rowspan="2">Sunday</td>
+        <td>08:30AM</td>
+        <td>Web Technology(Theory)</td>
+        <td>D-101</td>
+    </tr>
+    
+    <tr>
+        <td>10:00AM</td>
+        <td>Web Technologies (Lab)</td>
+        <td>LAB-3</td>
+    </tr>
+    
+    <tr>
+        <td>Tuesday</td>
+        <td>09:00 AM</td>
+        <td>Database Systems</td>
+        <td>D-204</td>
+    </tr>
+        <tr>
+        <td>Thursday</td>
+        <td>11:30 AM</td>
+        <td>Software Engineering</td>
+        <td>D-110</td>
+    </tr>
+    
+    </table>
+
+    <h3>Class Feedback Form</h3>
+           <fieldset>
+            <legend>Class Feedback</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name"
+                   name="fn" required>
+
+            <br><br>
+
+            <label>Email:</label>
+            <input type="email" id="email"
+                   name="em" required>
+
+                <br><br>
+
+            <Label for = "date">Class Date</Label>
+            <input type="date" id="date"
+                   name="date" required>
+                   <br><br>
+
+                   <label for="satisfaction"> Rating (1 to 5):</label>
+                <input type="datalist" id="satisfaction" name="interest"
+                       min="1" max="5">
+                       <br><br>
+
+                        <label>Select a day:</label>
+                            <input type="radio" id="theory" name="theory"
+                                   value="theory" required>
+                            <label for="theory">Theory</label>
+
+                            <input type="radio" id="lab" name="lab"
+                                   value="lab">
+                            <label for="lab">Lab</label>
+                            <br><br>
+                            <label for="department">Day:</label>
+                                <select id="department" name="department" required>
+                                    <option value="">Select a day</option>
+                                    <option value="sunday">Sunday</option>
+                                    <option value="tuesday">Tuesday</option>
+                                    <option value="thursday">Thursday</option>
+                                </select>
+                                <br><br>
+                        <label for="comments">Comments:</label>
+                        <br>
+                        <textarea id="comments" name="comments"
+                                  cols="10" required></textarea>
+
+                                  <br><br>
+                            <button type="submit">Send Feedback</button>
+        </fieldset>
+</body>
+</html>
